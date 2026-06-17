@@ -1,0 +1,36 @@
+:root{
+    --heritage-green:#1B4332;
+    --earth-brown:#6F4E37;
+    --gold:#D4A017;
+    --cream:#F8F4E3;
+}
+
+body{
+
+    background-color:var(--cream);
+}
+
+.hero py-5{
+   background: linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.5));
+    background-image: url('C:\\Users\\Yngin\\OneDrive\\Desktop\\WebProject\\images\\gettyimages-2187209878-612x612.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.custom-green{
+    background-color:var(--heritage-green);
+}
+
+.custom-gold{
+    background-color:var(--gold);
+    color:white;
+}
+
+.custom-brown{
+    background-color:var(--earth-brown);
+}
+
+.custom-red {
+    background-color: #B22222;
+    color: white;
+}
