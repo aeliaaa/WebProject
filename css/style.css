@@ -1,5 +1,6 @@
 .roots-text{
     font-family: 'Cormorant Garamond', serif;
+    font-weight:800;
     color: #F8F5D2;
 }
 
@@ -9,12 +10,6 @@
 }
 
 
-:root{
-    --heritage-green:#1B4332;
-    --earth-brown:#411102;
-    --gold:#FDD973;
-    --cream:#F8F4E3;
-}
 
 body{
 
@@ -23,11 +18,7 @@ body{
 .hero.py-5{
 
     background-image:
-        linear-gradient(
-            rgba(44, 62, 80, 0.7),
-            rgba(44, 62, 80, 0.5)
-        ),
-        url('../images/mainn.jpeg');
+        url('../images/download.jpeg');
 
     background-size: cover;
     background-position: center;
