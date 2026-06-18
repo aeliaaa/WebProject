@@ -1,7 +1,18 @@
+.roots-text{
+    font-family: 'Cormorant Garamond', serif;
+    color: #F8F5D2;
+}
+
+.canvas-text{
+    font-family: 'Inter', sans-serif;
+    color: #FBF5D2 ;
+}
+
+
 :root{
     --heritage-green:#1B4332;
-    --earth-brown:#6F4E37;
-    --gold:#D4A017;
+    --earth-brown:#411102;
+    --gold:#FDD973;
     --cream:#F8F4E3;
 }
 
@@ -16,7 +27,7 @@ body{
             rgba(44, 62, 80, 0.7),
             rgba(44, 62, 80, 0.5)
         ),
-        url('../images/gettyimages-2187209878-612x612.jpg');
+        url('../images/mainn.jpeg');
 
     background-size: cover;
     background-position: center;
