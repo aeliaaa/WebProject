@@ -9,12 +9,23 @@ body{
 
     background-color:var(--cream);
 }
+.hero.py-5{
 
-.hero py-5{
-   background: linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.5));
-    background-image: url('C:\\Users\\Yngin\\OneDrive\\Desktop\\WebProject\\images\\gettyimages-2187209878-612x612.jpg');
-    background-position: center;
+    background-image:
+        linear-gradient(
+            rgba(44, 62, 80, 0.7),
+            rgba(44, 62, 80, 0.5)
+        ),
+        url('../images/gettyimages-2187209878-612x612.jpg');
+
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
 }
 
 .custom-green{
