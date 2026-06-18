@@ -6,18 +6,21 @@
 
 .canvas-text{
     font-family: 'Inter', sans-serif;
+    font-weight:500;
     color: #FBF5D2 ;
 }
 
-
-
-body{
+.body{
 
     background-color:var(--cream);
 }
 .hero.py-5{
 
     background-image:
+        linear-gradient(
+            rgba(156, 42, 5, 0.7),
+            rgba(245, 161, 26, 0.5)
+        ),
         url('../images/download.jpeg');
 
     background-size: cover;

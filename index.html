@@ -1,165 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Roots & Canvas | Home</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roots & Canvas | Kenyan Art Marketplace</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 sticky-top">
+<!-- NAVIGATION -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html">ROOTS & CANVAS</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="menu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="aboutus.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="Heritage.html">Heritage</a></li>
-          <li class="nav-item"><a class="nav-link" href="Artists.html">Artists</a></li>
-          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-          <li class="nav-item"><a class="nav-link" href="MarketPlace.html">Marketplace</a></li>
-          <li class="nav-item"><a class="nav-link" href="contacts.html">Contact</a></li>
-          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
 
-  <!-- HERO -->
-  <section class="hero py-5">
+        <a class="navbar-brand fw-bold" href="index.html">
+            Roots & Canvas
+        </a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMenu">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="Heritage.html">Heritage</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="Artists.html">Artists</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="MarketPlace.html">Marketplace</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contacts.html">Contact</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+</nav>
+
+<!-- HERO SECTION -->
+
+<section class="bg-light py-5">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-8 text-white">
-          <p class="text-uppercase fw-semibold">Kenyan Heritage • Modern Art • Culture</p>
-          <h1 class="display-1">
-            <span class="roots-text">ROOTS</span><br>
-            & <span class="canvas-text">CANVAS</span>
-          </h1>
-          <p class="lead">A living gallery where Kenya's cultural heritage inspires contemporary creativity.</p>
-          <p>Discover artists, explore stories, and collect meaningful artwork that celebrates the past, reflects the present, and shapes the future.</p>
-          <a href="gallery.html" class="btn custom-red btn-lg mt-3">Explore Gallery</a>
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+
+                <h1 class="display-4 fw-bold mb-4">
+                    Where Kenya's Stories Become Art
+                </h1>
+
+                <p class="lead">
+                    Roots & Canvas celebrates Kenyan heritage,
+                    empowers artists, and connects collectors
+                    with authentic creative expression.
+                </p>
+
+                <p>
+                    Explore artwork inspired by tradition,
+                    shaped by the present, and imagined for
+                    the future.
+                </p>
+
+                <a href="gallery.html" class="btn btn-warning btn-lg me-2">
+                    Explore Gallery
+                </a>
+
+                <a href="artists.html" class="btn btn-outline-dark btn-lg">
+                    Meet Artists
+                </a>
+
+            </div>
+
+            <section class="container">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img id="slide1" src="gettyimages-90616365-612x612.jpg" alt="Colorful beaded necklaces and bracelets displaying intricate beadwork patterns in traditional Kenyan craftsmanship with warm, vibrant colors" >
+                    </div>
+                    <div class="slide">
+                        <img id="slide2" src="gettyimages-518758002-612x612.jpg" alt="Bamburi Beach coastline in Kenya with turquoise waters meeting sandy white shore, capturing the serene beauty of East African coastal landscape" >
+                    </div>
+                    <div class="slide">
+                        <img id="slide3" src="gettyimages-171576654-612x612.jpg" alt="Samburu woman wearing traditional attire including beaded jewelry and distinctive cultural garments, showcasing rich heritage and proud cultural identity" >
+                    </div>
+
+                </div>
+            </section>
+
+            <div class="col-lg-6 text-center">
+
+                <img src="images/hero-art.jpg"
+                     alt="Vibrant Kenyan artwork celebrating African heritage with bold colors and cultural motifs reflecting traditional artistic expression"
+                     class="img-fluid rounded shadow">
+
+            </div>
+
         </div>
-      </div>
+
     </div>
-  </section>
+</section>
 
-  <!-- OUR ROOTS -->
-  <section class="py-5 bg-light">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-4">
-          <h2 class="display-5 fw-bold">OUR ROOTS</h2>
-        </div>
-        <div class="col-lg-8">
-          <p class="lead">For generations, Kenyan communities have expressed their identity through storytelling, beadwork, sculpture, painting, music, and craftsmanship.</p>
-          <p>Roots & Canvas exists to preserve these traditions while creating opportunities for modern artists to showcase their work and reach new audiences.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+<!-- OUR VISION -->
 
-  <!-- FEATURED ARTISTS -->
-  <section class="py-5">
-    <div class="container">
-      <h2 class="text-center display-5 fw-bold mb-5">MEET THE ARTISTS</h2>
-      <div class="row g-4">
-
-        <div class="col-md-4">
-          <div class="card border-0 shadow-sm">
-            <img src="images/mixed media art.jpeg" class="card-img-top" alt="Rose Kanunga artwork">
-            <div class="card-body">
-              <h4>Rose Kanunga</h4>
-              <p>Mixed-media artist drawing inspiration from coastal Swahili culture.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card border-0 shadow-sm">
-            <img src="images/dickson-audacity-768x767,tech.jpg" class="card-img-top" alt="Dickson Nedia artwork">
-            <div class="card-body">
-              <h4>Dickson Nedia</h4>
-              <p>Digital artist exploring future African identities through technology and art.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card border-0 shadow-sm">
-            <img src="images/happy-freedom-444x444.jpg" class="card-img-top" alt="Amina Hassan artwork">
-            <div class="card-body">
-              <h4>Amina Hassan</h4>
-              <p>Contemporary painter inspired by Kenyan folklore and cultural symbolism.</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- FEATURED COLLECTIONS -->
-  <section class="py-5">
-    <div class="container">
-      <h2 class="text-center display-5 fw-bold mb-5">FEATURED COLLECTIONS</h2>
-      <div class="row g-4">
-
-        <div class="col-md-4">
-          <div class="card border-0 shadow">
-            <div class="card-body">
-              <h4>Heritage Collection</h4>
-              <p>Artwork inspired by traditional Kenyan communities and cultural practices.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card border-0 shadow">
-            <div class="card-body">
-              <h4>Contemporary Collection</h4>
-              <p>Modern works exploring identity, community, and everyday life.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card border-0 shadow">
-            <div class="card-body">
-              <h4>Future Collection</h4>
-              <p>Digital creativity, innovation, and emerging artistic voices.</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- CALL TO ACTION -->
-  <section class="bg-dark text-white py-5">
+<section class="py-5">
     <div class="container text-center">
-      <h2 class="display-6 fw-bold">JOIN THE MOVEMENT</h2>
-      <p class="lead">Support artists. Preserve culture. Celebrate creativity.</p>
-      <a href="marketplace.html" class="btn custom-red btn-lg">Browse Marketplace</a>
+
+        <h2 class="mb-4">Preserving Heritage. Inspiring Tomorrow.</h2>
+
+        <p class="lead">
+            We believe every artwork carries a story.
+            Roots & Canvas provides a space where artists
+            can share those stories while connecting with
+            audiences across Kenya and around the world.
+        </p>
+
     </div>
-  </section>
+</section>
 
-  <!-- FOOTER -->
-  <footer class="custom-green text-white text-center py-3">
-    <p class="mb-0">&copy; 2026 Roots & Canvas | Preserving Heritage, Inspiring Tomorrow</p>
-  </footer>
+<!-- FEATURED SECTIONS -->
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+<section class="py-5 bg-light">
+
+    <div class="container">
+
+        <h2 class="text-center mb-5">
+            Explore Our Collections
+        </h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img src="images/traditional-art.jpg"
+                         class="card-img-top"
+                         alt="Traditional Kenyan artwork featuring indigenous cultural symbols and heritage-inspired artistic designs">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">
+                            Heritage Collection
+                        </h5>
+
+                        <p class="card-text">
+                            Discover artworks inspired by
+                            Kenya's rich cultural traditions.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img src="images/contemporary-art.jpg"
+                         class="card-img-top"
+                         alt="Contemporary Art">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">
+                            Contemporary Collection
+                        </h5>
+
+                        <p class="card-text">
+                            Explore modern artistic voices
+                            redefining Kenyan creativity.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img src="images/digital-art.jpg"
+                         class="card-img-top"
+                         alt="Digital Art">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">
+                            Future Collection
+                        </h5>
+
+                        <p class="card-text">
+                            Experience the next generation
+                            of Kenyan artistic innovation.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- WHY ROOTS & CANVAS -->
+
+<section class="py-5">
+
+    <div class="container">
+
+        <h2 class="text-center mb-5">
+            Why Roots & Canvas?
+        </h2>
+
+        <div class="row text-center">
+
+            <div class="col-md-4">
+
+                <h4> Heritage</h4>
+
+                <p>
+                    Preserving traditional stories,
+                    symbols, and artistic practices.
+                </p>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <h4> Creativity</h4>
+
+                <p>
+                    Supporting artists in showcasing
+                    their unique visions.
+                </p>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <h4> Community</h4>
+
+                <p>
+                    Connecting creators, collectors,
+                    and culture enthusiasts.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CALL TO ACTION -->
+
+<section class="bg-dark text-white py-5">
+
+    <div class="container text-center">
+
+        <h2>Join Kenya's Creative Journey</h2>
+
+        <p class="lead">
+            Discover inspiring artists and find unique
+            pieces that tell meaningful stories.
+        </p>
+
+        <a href="marketplace.html"
+           class="btn btn-warning btn-lg">
+            Visit Marketplace
+        </a>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="bg-black text-white text-center py-3">
+
+    <p class="mb-0">
+        © 2026 Roots & Canvas | Celebrating Kenyan Heritage Through Art
+    </p>
+
+</footer>
+
+<!-- Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
