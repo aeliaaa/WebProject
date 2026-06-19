@@ -287,3 +287,95 @@
     background: #556B2F;
 
 }
+
+.blog-hero{
+
+    background:
+    linear-gradient(
+        rgba(75,8,3,0.8),
+        rgba(75,8,3,0.6)
+    ),
+    url('../images/blog-hero.jpg');
+
+    background-size:cover;
+    background-position:center;
+
+    color:white;
+
+    padding:120px 0;
+
+}
+
+.blog-card{
+
+    transition:0.3s;
+
+}
+
+.blog-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.blog-category{
+
+    background-color:var(--olive);
+
+    color:white;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-size:0.8rem;
+
+}
+
+.featured-blog{
+
+    background-color:var(--desert-tan);
+
+}
+
+.contact-hero{
+
+    background:
+    linear-gradient(
+        rgba(75,8,3,0.8),
+        rgba(75,8,3,0.6)
+    ),
+    url('../images/contact-banner.jpg');
+
+    background-size:cover;
+    background-position:center;
+
+    color:white;
+
+    padding:120px 0;
+
+}
+
+.contact-card{
+
+    background:white;
+
+    padding:30px;
+
+    text-align:center;
+
+    border-radius:20px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+
+    height:100%;
+
+}
+
+.contact-card h3{
+
+    color:var(--chestnut);
+
+    margin-bottom:15px;
+
+}
