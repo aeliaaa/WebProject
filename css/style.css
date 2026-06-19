@@ -71,3 +71,219 @@
     transform:scale(1.03);
 
 }
+
+.artwork-card{
+
+    position:relative;
+
+}
+
+.status{
+
+    position:absolute;
+
+    top:15px;
+
+    left:15px;
+
+    padding:8px 15px;
+
+    border-radius:30px;
+
+    font-size:0.8rem;
+
+    font-weight:bold;
+
+    color:white;
+
+    z-index:10;
+
+}
+
+.artwork-card img{
+
+    height:350px;
+
+    object-fit:cover;
+
+}
+
+.artwork-card:hover{
+
+    transform:translateY(-5px);
+
+    transition:0.3s;
+
+}
+
+.carousel{
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.25);
+
+}
+
+.carousel-caption{
+
+    background:rgba(75,8,3,0.65);
+
+    padding:20px;
+
+    border-radius:15px;
+
+}
+
+.carousel-img{
+
+    height:600px;
+
+    object-fit:cover;
+
+    filter:brightness(65%);
+
+}
+
+.carousel-caption{
+
+    bottom:20%;
+
+}
+
+.carousel-caption h2{
+
+    font-size:3rem;
+
+    color:white;
+
+    font-family:'Cormorant Garamond', serif;
+
+}
+
+.carousel-caption p{
+
+    font-size:1.2rem;
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+.marketplace-hero{
+
+    background-color: var(--desert-tan);
+
+}
+
+.market-title{
+
+    color: var(--chestnut);
+
+    font-family: 'Cormorant Garamond', serif;
+
+    margin-bottom: 20px;
+
+}
+
+.art-row{
+
+    display: flex;
+
+    gap: 20px;
+
+    overflow-x: auto;
+
+    padding-bottom: 20px;
+
+    scrollbar-width: none;
+
+}
+
+.art-row::-webkit-scrollbar{
+
+    display: none;
+
+}
+
+.market-card{
+
+    min-width: 320px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    position: relative;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+
+    transition: 0.3s;
+
+}
+
+.market-card:hover{
+
+    transform: translateY(-8px);
+
+}
+
+.market-card img{
+
+    width: 100%;
+
+    height: 280px;
+
+    object-fit: cover;
+
+}
+
+.market-info{
+
+    padding: 20px;
+
+}
+
+.status{
+
+    position: absolute;
+
+    top: 15px;
+
+    left: 15px;
+
+    padding: 8px 15px;
+
+    border-radius: 50px;
+
+    color: white;
+
+    font-size: 0.8rem;
+
+    font-weight: bold;
+
+    z-index: 10;
+
+}
+
+.sold{
+
+    background: #8B0000;
+
+}
+
+.booked{
+
+    background: #C87B38;
+
+}
+
+.available{
+
+    background: #556B2F;
+
+}
