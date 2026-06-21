@@ -1,11 +1,13 @@
 .roots-font{
     font-family: 'Cormorant Garamond', serif;
     color: #F8F5D2;
+    font-size: 5rem;
 }
 
 .canvas-font{
     font-family: 'Inter', sans-serif;
     color: #FBF5D2 ;
+    font-size: 5rem;
 }
 
 .body{
@@ -36,6 +38,7 @@
     --earth-brown:#6F4E37;
     --gold:#D4A017;
     --cream:#F8F4E3;
+    --red:#8B0000;
 }
 
 body{
@@ -53,6 +56,11 @@ body{
 
 .custom-brown{
     background-color:var(--earth-brown);
+}
+
+.custom-red{
+    background-color:#8B0000;
+    color:rgb(255, 255, 255);
 }
 
 .gallery-img{
