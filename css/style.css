@@ -14,14 +14,14 @@
 
     background-color:var(--cream);
 }
-.hero.py-5{
+.hero{
 
     background-image:
         linear-gradient(
             rgba(156, 42, 5, 0.7),
             rgba(245, 161, 26, 0.5)
         ),
-        url('../images/download.jpeg');
+        url('../images/images (7).jpeg');
 
     background-size: cover;
     background-position: center;
@@ -295,7 +295,7 @@
         rgba(75,8,3,0.8),
         rgba(75,8,3,0.6)
     ),
-    url('../images/blog-hero.jpg');
+    url('../images/images (12).jpeg');
 
     background-size:cover;
     background-position:center;
@@ -345,7 +345,7 @@
         rgba(75,8,3,0.8),
         rgba(75,8,3,0.6)
     ),
-    url('../images/contact-banner.jpg');
+    url('../images/5,473 Kenyan Art Stock Photos, High-Res Pictures, and Images - Getty Images _ African art_files/gettyimages-2182908956-612x612.jpg');
 
     background-size:cover;
     background-position:center;
