@@ -18,8 +18,8 @@
 
     background-image:
         linear-gradient(
-            rgba(156, 42, 5, 0.7),
-            rgba(245, 161, 26, 0.5)
+            rgba(193, 2, 2, 0.7),
+            rgba(211, 126, 6, 0.5)
         ),
         url('../images/images (7).jpeg');
 
@@ -33,22 +33,28 @@
     align-items: center;
 }
 
+:root{
+    --heritage-green:#1B4332;
+    --earth-brown:#6F4E37;
+    --gold:#D4A017;
+    --cream:#F8F4E3;
+}
+
+body{
+    background-color:var(--cream);
+}
+
 .custom-green{
     background-color:var(--heritage-green);
 }
 
 .custom-gold{
     background-color:var(--gold);
-    color:white;
+    color:rgb(255, 255, 255);
 }
 
 .custom-brown{
     background-color:var(--earth-brown);
-}
-
-.custom-red {
-    background-color: #B22222;
-    color: white;
 }
 
 .gallery-img{
