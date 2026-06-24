@@ -1,14 +1,22 @@
 .roots-font{
-    font-family: 'Cormorant Garamond', serif;
-    color: #F8F5D2;
-    font-size: 5rem;
+
+    font-family:'Bodoni Moda', serif;
+
+    font-size:5rem;
+
+    font-weight:700;
+
+    letter-spacing:-2px;
+
 }
 
 .canvas-font{
     font-family: 'Inter', sans-serif;
     color: #FBF5D2 ;
-    font-size: 5rem;
+    font-size: 4rem;
 }
+
+
 
  .navbar{ 
     position:fixed;
@@ -16,13 +24,15 @@
     left:50%;
     transform:translateX(-50%);
     width:95%;
-    padding:20px 50px;
+    padding:12px 30px;
+
+
 
     display:flex;
     justify-content:space-between;
     align-items:center;
+    font-family:'Manrope', sans-serif;
 
-    background:rgba(75,8,3,0.65);
 
     backdrop-filter:blur(15px);
 
@@ -33,7 +43,31 @@
     z-index:1000;
 }
 
+.logo{
+
+    font-family:'Cinzel', serif;
+
+    font-size:1.5rem;
+
+    font-weight:700;
+
+    color:var(--cream) !important;
+
+    letter-spacing:2px;
+
+}
+
 .nav-link{
+
+    font-family:'Manrope', sans-serif;
+
+    font-size:0.95rem;
+
+    font-weight:500;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
 
     color:var(--cream) !important;
 
@@ -128,7 +162,7 @@ font-family: 'Cormorant Garamond', serif; }
 
 .small-heading{
 
-    color:var(--amber);
+    color:var(--cream);
 
     letter-spacing:4px;
 
@@ -155,7 +189,7 @@ font-family: 'Cormorant Garamond', serif; }
 
     background:var(--copper);
 
-    color:white;
+    color:rgb(229, 201, 201);
 
     border:none;
 
@@ -452,6 +486,8 @@ img:hover{
 
     background:rgba(255,255,255,0.05);
 
+    color:var(--cream);
+
     border:1px solid rgba(255,255,255,0.1);
 
     border-radius:18px;
@@ -584,4 +620,5 @@ footer{
     margin-top:80px;
 
 }
+
 
