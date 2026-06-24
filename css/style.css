@@ -50,6 +50,7 @@ h1,h2,h3,h4,h5{
 }
 
 
+
 .hero{
 
     min-height:90vh;
@@ -83,8 +84,28 @@ h1,h2,h3,h4,h5{
 
 }
 
-body{
-    background-color:var(--cream);
+.custom-btn{
+
+    background:var(--copper);
+
+    color:white;
+
+    border:none;
+
+    padding:12px 30px;
+
+    border-radius:12px;
+
+    transition:0.3s;
+
+}
+
+.custom-btn:hover{
+
+    background:var(--amber);
+
+    transform:translateY(-3px);
+
 }
 
 .custom-green{
@@ -262,6 +283,7 @@ body{
 
 }
 
+
 .market-card{
 
     min-width: 320px;
@@ -360,6 +382,28 @@ body{
 
 }
 
+.card{
+
+    background:rgba(255,255,255,0.05);
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    transition:0.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+
+}
+
 .blog-card{
 
     transition:0.3s;
@@ -434,3 +478,24 @@ body{
 
 }
 
+.section-title{
+
+    font-size:3rem;
+
+    color:var(--cream);
+
+    margin-bottom:20px;
+
+}
+
+.section-subtitle{
+
+    color:var(--amber);
+
+    text-transform:uppercase;
+
+    letter-spacing:3px;
+
+    font-size:0.9rem;
+
+}
