@@ -33,27 +33,45 @@
     z-index:1000;
 }
 
+.nav-link{
+
+    color:var(--cream) !important;
+
+    transition:0.3s;
+
+}
+
+.nav-link:hover{
+
+    color:var(--black) !important;
+
+    text-shadow:0 0 10px rgba(192, 174, 10, 0.793);
+
+}
 
 
 
-.body{
+
+body{
     font-family:'Inter',sans-serif;
     background-color:var(--dark-brown);
-
+    color:var(--cream);
 }
 
 
 h1,h2,h3,h4,h5{
-
     font-family:'Cormorant Garamond',serif;
-
 }
 
+.h3{font-weight:bold;
+font-family: 'Cormorant Garamond', serif; }
 
 
 .hero{
 
-    min-height:90vh;
+    min-height:100vh;
+
+    padding-top:120px;
 
     display:flex;
 
@@ -73,6 +91,53 @@ h1,h2,h3,h4,h5{
 
 }
 
+.hero-title{
+
+    line-height:0.9;
+
+    margin-bottom:30px;
+
+}
+
+.hero-text{
+
+    font-size:1.2rem;
+
+    max-width:550px;
+
+    color:var(--cream);
+
+}
+
+.hero-image{
+
+    border-radius:25px;
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,0.4);
+
+    transition:0.4s;
+
+}
+
+.hero-image:hover{
+
+    transform:scale(1.03);
+
+}
+
+.small-heading{
+
+    color:var(--amber);
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    font-size:0.9rem;
+
+}
+
 :root{
 
     --chestnut:#4B0803;
@@ -81,8 +146,10 @@ h1,h2,h3,h4,h5{
     --dark-brown:#3A1F1A;
     --olive:#556B2F;
     --cream:#F7E3C9;
+    --desert-tan:#F2D2A2;
 
 }
+
 
 .custom-btn{
 
@@ -108,22 +175,18 @@ h1,h2,h3,h4,h5{
 
 }
 
-.custom-green{
-    background-color:var(--heritage-green);
+img{
+
+    border-radius:20px;
+     transition:0.4s;
+
 }
 
-.custom-gold{
-    background-color:var(--gold);
-    color:rgb(255, 255, 255);
-}
 
-.custom-brown{
-    background-color:var(--earth-brown);
-}
+img:hover{
 
-.custom-red{
-    background-color:#8B0000;
-    color:rgb(255, 255, 255);
+    transform:scale(1.02);
+
 }
 
 .gallery-img{
@@ -308,14 +371,17 @@ h1,h2,h3,h4,h5{
 
 }
 
-.market-card img{
+.market-card{
 
-    width: 100%;
+    background:rgba(255,255,255,0.05);
 
-    height: 280px;
+    backdrop-filter:blur(10px);
 
-    object-fit: cover;
+    border:1px solid rgba(255,255,255,0.1);
 
+    border-radius:20px;
+
+    color:var(--cream);
 }
 
 .market-info{
@@ -478,6 +544,15 @@ h1,h2,h3,h4,h5{
 
 }
 
+
+section{
+
+    padding-top:100px;
+
+    padding-bottom:100px;
+
+}
+
 .section-title{
 
     font-size:3rem;
@@ -499,3 +574,14 @@ h1,h2,h3,h4,h5{
     font-size:0.9rem;
 
 }
+
+footer{
+
+    background:#24130F;
+
+    padding:60px 0;
+
+    margin-top:80px;
+
+}
+
