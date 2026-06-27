@@ -1,41 +1,50 @@
 .roots-font{
 
-    font-family:'Bodoni Moda', serif;
+    font-family:'Cormorant Garamond', serif;
 
     font-size:4rem;
 
-    font-weight:700;
+    font-weight:500;
 
-    letter-spacing:-2px;
+    letter-spacing:1px;
 
 }
 
 .canvas-font{
     font-family: "Cormorant Garamond", serif;
     color: #FBF5D2 ;
-    font-size: 3rem;
+    font-size: 3.8rem;
 }
 
- .navbar{ 
-    position:fixed;
+.hero-title {
+  opacity: 0;
+  transform: translateY(40px);
+
+  animation: heroTitle 1.4s cubic-bezier(.22, 1, .36, 1) forwards;
+}
+
+@keyframes heroTitle {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.navbar{
+    position: fixed;
     top:20px;
-    left:50%;
-    transform:translateX(-50%);
-    width:95%;
+    left:20px;
+    right:20px;
+
+    width:auto;
+
     padding:12px 30px;
 
-
-
     display:flex;
-    justify-content:space-between;
     align-items:center;
-    font-family:'Manrope', sans-serif;
-
 
     backdrop-filter:blur(15px);
 
-    border:1px solid rgba(95, 84, 84, 0.624);
-
+    border:1px solid rgba(95,84,84,.6);
     border-radius:20px;
 
     z-index:1000;
@@ -67,7 +76,7 @@
 
     text-transform:uppercase;
 
-    color:var(--cream) !important;
+    color: #24130F;
 
     transition:0.3s;
 
@@ -91,6 +100,24 @@ body{
 }
 
 
+body > * {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: rise 0.8s ease forwards;
+}
+
+body > *:nth-child(1) { animation-delay: .1s; }
+body > *:nth-child(2) { animation-delay: .2s; }
+body > *:nth-child(3) { animation-delay: .3s; }
+body > *:nth-child(4) { animation-delay: .4s; }
+
+@keyframes rise {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 h1,h2,h3,h4,h5{
     font-family:'Manrope',serif;
 }
@@ -112,11 +139,11 @@ font-family: 'Cormorant Garamond', serif; }
 
     background:
     linear-gradient(
-        rgba(0,0,0,0.55),
-        rgba(0,0,0,0.7)
+       rgba(75,8,3,0.8),
+        rgba(75,8,3,0.6)
     ),
 
-    url('../images/images (7).jpeg');
+    url('../images/download (40).jpeg');
 
     background-size:cover;
 
@@ -147,7 +174,7 @@ font-family: 'Cormorant Garamond', serif; }
     border-radius:25px;
 
     box-shadow:
-    0 20px 50px rgba(0,0,0,0.4);
+    0 20px 50px var(--chestnut);
 
     transition:0.4s;
 
@@ -293,15 +320,13 @@ img:hover{
 
     overflow:hidden;
 
-    box-shadow:0 10px 30px rgba(0,0,0,0.25);
+    box-shadow:var(--chestnut);
 
 }
 
 .carousel-caption{
 
-    background:rgba(54, 4, 1, 0.65);
-
-    padding:20px;
+    padding:0px;
 
     border-radius:15px;
 
@@ -343,11 +368,6 @@ img:hover{
 
 }
 
-.marketplace-hero{
-
-    background-color: var(--desert-tan);
-
-}
 
 .market-title{
 
@@ -489,6 +509,24 @@ img:hover{
         rgba(75,8,3,0.6)
     ),
     url('../images/Story telling.jpeg');
+
+    background-size:cover;
+    background-position:center;
+
+    color:var(--cream);
+
+    padding:120px 0;
+
+}
+
+.gallery-hero{
+
+    background:
+    linear-gradient(
+        rgba(75,8,3,0.8),
+        rgba(75,8,3,0.6)
+    ),
+    url('../images/gallery.jpeg');
 
     background-size:cover;
     background-position:center;
