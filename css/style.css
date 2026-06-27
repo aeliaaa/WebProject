@@ -76,7 +76,7 @@
 
     text-transform:uppercase;
 
-    color: #24130F;
+    color: var(--desert-tan);
 
     transition:0.3s;
 
@@ -499,6 +499,41 @@ img:hover{
 
     padding:120px 0;
 
+}
+
+.Artists-hero{
+
+    background:
+    linear-gradient(
+        rgba(75,8,3,0.8),
+        rgba(75,8,3,0.6)
+    ),
+    url('../images/heri.jpeg');
+
+    background-size:cover;
+    background-position:center;
+
+    color:var(--cream);
+
+    padding:120px 0;
+
+}
+
+.About-hero{
+
+    background:
+    linear-gradient(
+        rgba(75,8,3,0.8),
+        rgba(75,8,3,0.6)
+    ),
+    url('../images/about.jpeg');
+
+    background-size:cover;
+    background-position:center;
+
+    color:var(--cream);
+
+    padding:120px 0;
 }
 
 .Heritage-hero{
