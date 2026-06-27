@@ -75,21 +75,32 @@
 
     </nav>
 
-<section class="marketPlace-hero">
 
-    <div class="container text-center">
+    <input
 
-        <h1 class="display-2 fw-bold">
-            Market Place
-        </h1>
+type="text"
 
-        <p  class="lead">
-            Discover unique artworks inspired by Kenya's heritage,
-            culture and future.
+id="search"
 
-    </div>
+placeholder="Search artwork..."
+>
 
-</section>
+
+    <div class="filter-buttons">
+
+<button onclick="filterArt('all')">All</button>
+
+<button onclick="filterArt('painting')">Paintings</button>
+
+<button onclick="filterArt('beadwork')">Beadwork</button>
+
+<button onclick="filterArt('photo')">Photography</button>
+
+<button onclick="filterArt('sculpture')">Sculptures</button>
+
+<button onclick="filterArt('collage')">Collages</button>
+
+</div>
 
 <!-- PAINTINGS -->
 
@@ -101,13 +112,15 @@
 
     <div class="art-row">
 
-        <div class="market-card">
+        <div class="market-card painting">
 
             <span class="status sold">
                 SOLD
             </span>
 
-            <img src="images/migration.jpeg" alt="Painting">
+            <img src="images/migration.jpeg" 
+            class="gallery-img"
+            alt="Painting">
 
             <div class="market-info">
 
@@ -128,13 +141,15 @@
 
         </div>
 
-        <div class="market-card">
+        <div class="market-card painting">
 
             <span class="status available">
                 AVAILABLE
             </span>
 
-            <img src="images/nganya.webp" alt="Painting">
+            <img src="images/nganya.webp" 
+            class="gallery-img"
+            alt="Painting">
 
             <div class="market-info">
 
@@ -153,13 +168,15 @@
             </div>
 
         </div>
-          <div class="market-card">
+          <div class="market-card painting">
 
             <span class="status available">
                 AVAILABLE
             </span>
 
-            <img src="images/Kikuyu.jpeg" alt="Painting">
+            <img src="images/Kikuyu.jpeg"
+            class="gallery-img"
+            alt="Painting">
 
             <div class="market-info">
 
@@ -193,13 +210,15 @@
 
     <div class="art-row">
 
-        <div class="market-card">
+        <div class="market-card beadwork">
 
             <span class="status booked">
                 BOOKED
             </span>
 
-            <img src="images/5,473 Kenyan Art Stock Photos, High-Res Pictures, and Images - Getty Images _ African art_files/gettyimages-534935576-612x612.jpg">
+            <img src="images/5,473 Kenyan Art Stock Photos, High-Res Pictures, and Images - Getty Images _ African art_files/gettyimages-534935576-612x612.jpg"
+            class="gallery-img"
+            alt="Maasai Beadwork">
 
             <div class="market-info">
 
@@ -219,13 +238,15 @@
             </div>
 
         </div>
-           <div class="market-card">
+           <div class="market-card beadwork">
 
             <span class="status booked">
                 available
             </span>
 
-            <img src="images/beaded bags.jpeg">
+            <img src="images/beaded bags.jpeg"
+            class="gallery-img"
+            alt="beadwork">
 
             <div class="market-info">
 
@@ -245,13 +266,15 @@
             </div>
 
         </div>
-             <div class="market-card">
+             <div class="market-card beadwork">
 
             <span class="status booked">
                 available
             </span>
 
-            <img src="images/beaded bags.jpeg">
+            <img src="images/beaded bags.jpeg"
+            class="gallery-img"
+            alt="Kikuyu Beadwork">
 
             <div class="market-info">
 
@@ -286,13 +309,15 @@
 
     <div class="art-row">
 
-        <div class="market-card">
+        <div class="market-card sculpture">
 
             <span class="status available">
                 AVAILABLE
             </span>
 
-            <img src="images/sculptures.jpeg">
+            <img src="images/sculptures.jpeg"
+            class="gallery-img"
+            alt="sculpture">
 
             <div class="market-info">
 
@@ -327,13 +352,15 @@
 
     <div class="art-row">
 
-        <div class="market-card">
+        <div class="market-card photograph">
 
             <span class="status sold">
                 SOLD
             </span>
 
-            <img src="images/photo1.jpg">
+            <img src="images/photo1.jpg"
+            class="gallery-img"
+            alt="photography">
 
             <div class="market-info">
 
@@ -355,13 +382,15 @@
         </div>
 
     </div>
-         <div class="market-card">
+         <div class="market-card photograph">
 
             <span class="status sold">
                 SOLD
             </span>
 
-            <img src="images/photo1.jpg">
+            <img src="images/photo1.jpg"
+            class="gallery-img"
+            alt="photography">
 
             <div class="market-info">
 
@@ -383,13 +412,15 @@
         </div>
 
     </div>
-         <div class="market-card">
+         <div class="market-card photograph">
 
             <span class="status sold">
                 SOLD
             </span>
 
-            <img src="images/photo1.jpg">
+            <img src="images/photo1.jpg"
+            class="gallery-img"
+            alt="photography">
 
             <div class="market-info">
 
@@ -426,7 +457,20 @@
 
 </footer>
 
+<!-- LIGHTBOX -->
+
+<div id="lightbox">
+
+    <span id="close-lightbox">&times;</span>
+
+    <img id="lightbox-img" src="" alt="Artwork">
+
+    <div id="lightbox-caption"></div>
+
+</div>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 
