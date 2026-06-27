@@ -610,6 +610,144 @@ img:hover{
 
 }
 
+/* ================================
+   Marketplace Category Buttons
+================================ */
+
+.filter-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    margin:40px 0;
+
+}
+
+.filter-buttons button{
+
+    background:rgba(255,255,255,0.08);
+
+    color:var(--cream);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    padding:12px 28px;
+
+    border-radius:40px;
+
+    font-family:'Manrope',sans-serif;
+
+    font-size:0.95rem;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    cursor:pointer;
+
+    transition:all .35s ease;
+
+    backdrop-filter:blur(12px);
+
+}
+
+.filter-buttons button:hover{
+
+    background:var(--amber);
+
+    color:#fff;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 8px 20px rgba(232,154,45,.35);
+
+}
+
+.filter-buttons button.active{
+
+    background:var(--copper);
+
+    color:white;
+
+    border-color:var(--amber);
+
+}
+
+/* ===============================
+   Marketplace Search Bar
+================================== */
+
+.search-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin:40px auto;
+
+}
+
+#search{
+
+    width:100%;
+
+    max-width:650px;
+
+    padding:16px 25px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:50px;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(15px);
+
+    -webkit-backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,0.15);
+
+    color:var(--cream);
+
+    font-family:'Manrope', sans-serif;
+
+    font-size:1rem;
+
+    letter-spacing:.5px;
+
+    transition:all .35s ease;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.15);
+
+}
+
+#search::placeholder{
+
+    color:rgba(255,255,255,.65);
+
+    font-style:italic;
+
+}
+
+#search:focus{
+
+    background:rgba(255,255,255,.12);
+
+    border:1px solid var(--amber);
+
+    box-shadow:
+        0 0 20px rgba(232,154,45,.35),
+        0 10px 30px rgba(0,0,0,.25);
+
+}
+
 .card{
 
     background:rgba(255,255,255,0.05);
@@ -757,6 +895,50 @@ section{
 
 .social-icons img:hover{
     transform:scale(1.2);
+}
+
+/* Scroll To Top Button */
+
+#topBtn{
+
+    position:fixed;
+
+    bottom:30px;
+
+    right:30px;
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:var(--amber);
+
+    color:white;
+
+    font-size:24px;
+
+    cursor:pointer;
+
+    display:none;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.3);
+
+    transition:all .3s ease;
+
+    z-index:999;
+
+}
+
+#topBtn:hover{
+
+    background:var(--copper);
+
+    transform:translateY(-5px);
+
 }
 
 footer{
