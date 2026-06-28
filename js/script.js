@@ -1,3 +1,7 @@
+// ===========================
+// SCROLL ANIMATION
+// ===========================
+
 const sections = document.querySelectorAll(".fade-section");
 
 window.addEventListener("scroll", () => {
@@ -6,7 +10,7 @@ window.addEventListener("scroll", () => {
 
         const top = section.getBoundingClientRect().top;
 
-        if(top < window.innerHeight - 100){
+        if (top < window.innerHeight - 100) {
 
             section.classList.add("show");
 
@@ -16,68 +20,111 @@ window.addEventListener("scroll", () => {
 
 });
 
-function filterArt(category, button){
+
+// ===========================
+// MARKETPLACE FILTER + SEARCH
+// ===========================
+
+let currentCategory = "all";
+
+const searchInput = document.getElementById("search");
+
+function filterArt(category, button) {
+
+    currentCategory = category;
+
+    document.querySelectorAll(".filter-buttons button").forEach(btn => {
+
+        btn.classList.remove("active");
+
+    });
+
+    if(button){
+
+        button.classList.add("active");
+
+    }
+
+    updateGallery();
+
+}
+
+if(searchInput){
+
+    searchInput.addEventListener("keyup", updateGallery);
+
+}
+
+function updateGallery(){
+
+    const searchValue = searchInput
+        ? searchInput.value.toLowerCase()
+        : "";
 
     const cards = document.querySelectorAll(".market-card");
 
-    cards.forEach(card=>{
+    cards.forEach(card => {
 
-        if(category==="all"|| card.classList.contains(category)){
+        const matchesCategory =
 
-            card.style.display="block";
+            currentCategory === "all" ||
 
-        }
+            card.classList.contains(currentCategory);
 
-        else if(card.classList.contains(category)){
+        const matchesSearch =
 
-            card.style.display="none";
+            card.innerText
+                .toLowerCase()
+                .includes(searchValue);
+
+        if(matchesCategory && matchesSearch){
+
+            card.style.display = "block";
 
         }
 
         else{
 
-            card.style.display="none";
+            card.style.display = "none";
 
         }
 
     });
 
-    const buttons = document.querySelectorAll(".filter-buttons button");
+    // Hide category headings with no visible cards
 
-    buttons.forEach(button => {
+    document.querySelectorAll(".category-section").forEach(section => {
 
-    button.classList.remove("active");
+        const visibleCards = Array.from(
 
-});
+            section.querySelectorAll(".market-card")
 
-event.target.classList.add("active");
+        ).filter(card =>
+
+            card.style.display !== "none"
+
+        );
+
+        if(visibleCards.length === 0){
+
+            section.style.display = "none";
+
+        }
+
+        else{
+
+            section.style.display = "block";
+
+        }
+
+    });
 
 }
 
 
-  
-//......
-
-const search=document.getElementById("search");
-
-search.addEventListener("keyup",()=>{
-
-const value=search.value.toLowerCase();
-
-const cards=document.querySelectorAll(".market-card");
-
-cards.forEach(card=>{
-
-const text=card.innerText.toLowerCase();
-
-card.style.display=text.includes(value)
-?"block":"none";
-
-});
-
-});
-
-//lightbox
+// ===========================
+// LIGHTBOX
+// ===========================
 
 const lightbox = document.getElementById("lightbox");
 
@@ -87,89 +134,109 @@ const caption = document.getElementById("lightbox-caption");
 
 const closeBtn = document.getElementById("close-lightbox");
 
-document.querySelectorAll(".gallery-img").forEach(image=>{
+if(lightbox && lightboxImg && caption && closeBtn){
 
-    image.addEventListener("click",()=>{
+    document.querySelectorAll(".gallery-img").forEach(image=>{
 
-        lightbox.style.display="flex";
+        image.addEventListener("click",()=>{
 
-        lightboxImg.src=image.src;
+            lightbox.style.display="flex";
 
-        caption.textContent=image.alt;
+            lightboxImg.src=image.src;
+
+            caption.textContent=image.alt;
+
+        });
 
     });
 
-});
-
-closeBtn.addEventListener("click",()=>{
-
-    lightbox.style.display="none";
-
-});
-
-lightbox.addEventListener("click",(e)=>{
-
-    if(e.target===lightbox){
+    closeBtn.addEventListener("click",()=>{
 
         lightbox.style.display="none";
 
-    }
+    });
 
-});
+    lightbox.addEventListener("click",(e)=>{
 
-const form=document.querySelector("form");
+        if(e.target===lightbox){
 
-form.addEventListener("submit",function(e){
+            lightbox.style.display="none";
 
-const email=document.querySelector("input[type=email]").value;
-
-if(!email.includes("@")){
-
-e.preventDefault();
-
-alert("Please enter a valid email.");
-
-}
-
-});
-
-const subscribe=document.getElementById("subscribeBtn");
-
-subscribe.onclick=function(){
-
-alert("Thank you for joining Roots & Canvas!");
-
-}
-
-// Scroll to Top Button
-
-const topBtn = document.getElementById("topBtn");
-
-window.addEventListener("scroll", () => {
-
-    if(window.scrollY > 300){
-
-        topBtn.style.display = "block";
-
-    }
-
-    else{
-
-        topBtn.style.display = "none";
-
-    }
-
-});
-
-topBtn.addEventListener("click", () => {
-
-    window.scrollTo({
-
-        top:0,
-
-        behavior:"smooth"
+        }
 
     });
 
-});
+}
+
+
+// ===========================
+// CONTACT FORM
+// ===========================
+
+const form = document.querySelector("form");
+
+if(form){
+
+    form.addEventListener("submit",function(e){
+
+        const email = document.querySelector("input[type=email]");
+
+        if(email && !email.value.includes("@")){
+
+            e.preventDefault();
+
+            alert("Please enter a valid email address.");
+
+        }
+
+    });
+
+}
+
+
+
+// ===========================
+// SCROLL TO TOP
+// ===========================
+
+const topBtn = document.getElementById("topBtn");
+
+if(topBtn){
+
+    window.addEventListener("scroll",()=>{
+
+        if(window.scrollY > 300){
+
+            topBtn.style.display="block";
+
+        }
+
+        else{
+
+            topBtn.style.display="none";
+
+        }
+
+    });
+
+    topBtn.addEventListener("click",()=>{
+
+        window.scrollTo({
+
+            top:0,
+
+            behavior:"smooth"
+
+        });
+
+    });
+
+}
+
+
+// ===========================
+// INITIAL LOAD
+// ===========================
+
+updateGallery();
 

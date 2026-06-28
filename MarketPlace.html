@@ -104,19 +104,19 @@
 
 <div class="filter-buttons">
 
-    <button onclick="filterArt('all',this)" class="active">
+    <button onclick="filterArt('all', this)" class="active">
         All
     </button>
 
-    <button onclick="filterArt('painting',this)">
+    <button onclick="filterArt('painting', this)">
         Paintings
     </button>
 
-    <button onclick="filterArt('beadwork,this')">
+    <button onclick="filterArt('beadwork', this)">
         Beadwork
     </button>
 
-    <button onclick="filterArt('photo',this)">
+    <button onclick="filterArt('photo', this)">
         Photography
     </button>
 
@@ -124,9 +124,7 @@
 
 <!-- PAINTINGS -->
 
-<section class="container py-5">
-
-    <div class="category-section">
+<section class="container py-5 category-section">
 
     <h2 class="market-title">
          Paintings
@@ -137,7 +135,7 @@
         <div class="market-card painting">
 
             <span class="status sold">
-                SOLD
+                sold
             </span>
 
             <img src="images/migration.jpeg" 
@@ -166,7 +164,7 @@
         <div class="market-card painting">
 
             <span class="status available">
-                AVAILABLE
+                available
             </span>
 
             <img src="images/nganya.webp" 
@@ -177,7 +175,7 @@
 
                 <h5>Afternoon in Town</h5>
 
-                <p><strong>Artist:</strong> Faith Atieno</p>
+                <p><strong>Artist:</strong> Grace Njeri</p>
 
                 <p>
                     Celebrating colour and the vibrancy of urban life.
@@ -193,7 +191,7 @@
           <div class="market-card painting">
 
             <span class="status available">
-                AVAILABLE
+                available
             </span>
 
             <img src="images/Kikuyu.jpeg"
@@ -225,7 +223,7 @@
 
 <!-- BEADWORK -->
 
-<section class="container py-5">
+<section class="container py-5 category-section">
 
     <h2 class="market-title">
          Traditional Beadwork
@@ -233,38 +231,10 @@
 
     <div class="art-row">
 
-        <div class="market-card beadwork">
-
-            <span class="status booked">
-                BOOKED
-            </span>
-
-            <img src="images/5,473 Kenyan Art Stock Photos, High-Res Pictures, and Images - Getty Images _ African art_files/gettyimages-534935576-612x612.jpg"
-            class="gallery-img"
-            alt="Maasai Beadwork">
-
-            <div class="market-info">
-
-                <h5>Maasai Pride</h5>
-
-                <p><strong>Artist:</strong> Naserian Ole Sipit</p>
-
-                <p>
-                    Handcrafted beadwork representing
-                    identity and heritage.
-                </p>
-
-                <button class="btn custom-btn">
-                    KES 12,500
-                </button>
-
-            </div>
-
-        </div>
            <div class="market-card beadwork">
 
             <span class="status booked">
-                available
+                booked
             </span>
 
             <img src="images/beaded bags.jpeg"
@@ -289,10 +259,40 @@
             </div>
 
         </div>
+
+                <div class="market-card beadwork">
+
+            <span class="status available">
+                available
+            </span>
+
+            <img src="images/5,473 Kenyan Art Stock Photos, High-Res Pictures, and Images - Getty Images _ African art_files/gettyimages-534935576-612x612.jpg"
+            class="gallery-img"
+            alt="Maasai Beadwork">
+
+            <div class="market-info">
+
+                <h5>Maasai Pride</h5>
+
+                <p><strong>Artist:</strong> Naserian Ole Sipit</p>
+
+                <p>
+                    Handcrafted beadwork representing
+                    identity and heritage.
+                </p>
+
+                <button class="btn custom-btn">
+                    KES 12,500
+                </button>
+
+            </div>
+
+        </div> 
+
              <div class="market-card beadwork">
 
-            <span class="status booked">
-                available
+            <span class="status sold">
+                sold
             </span>
 
             <img src="images/gettyimages-171576654-612x612.jpg"
@@ -324,7 +324,7 @@
 
 <!-- SCULPTURES -->
 
-<section class="container py-5">
+<section class="container py-5 category-section">
 
     <h2 class="market-title">
          Sculptures
@@ -392,8 +392,8 @@
 
            <div class="market-card sculpture">
 
-            <span class="status available">
-                Booked
+            <span class="status booked">
+                booked
             </span>
 
             <img src="images/images (14).jpeg"
@@ -425,7 +425,7 @@
 
 <!-- PHOTOGRAPHY -->
 
-<section class="container py-5">
+<section class="container py-5 category-section">
 
     <h2 class="market-title">
          Photography
@@ -433,7 +433,7 @@
 
     <div class="art-row">
 
-        <div class="market-card photograph">
+        <div class="market-card photo">
 
             <span class="status booked">
                 booked
@@ -462,10 +462,10 @@
 
         </div>
 
-         <div class="market-card photograph">
+         <div class="market-card photo">
 
             <span class="status sold">
-                SOLD
+                sold
             </span>
 
             <img src="images/gettyimages-1370112823-612x612.jpg"
@@ -491,7 +491,7 @@
 
         </div>
 
-         <div class="market-card photograph">
+         <div class="market-card photo">
 
             <span class="status available">
                 available
@@ -522,6 +522,24 @@
     </div>
 
 </section>
+
+<section class="py-5">
+
+    <div class="container text-center">
+
+        <h2>Want to see more of our work</h2>
+
+        <p class="lead">
+            Discover inspiring artists and find unique
+            pieces that tell meaningful stories.
+        </p>
+
+        <a href="gallery.html"
+           class="btn custom-btn btn-lg">
+            Visit Gallery
+        </a>
+
+</div>
 
 <footer class="py-4 text-center">
 
